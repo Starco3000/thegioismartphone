@@ -1,0 +1,320 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+  --color-1: #eaeaea;
+  --color-2: #fe0000;
+  --color-3: #939393;
+}
+.wrapper {
+  height: auto;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* CSS san pham chi tiet */
+.wrapper_detail {
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+}
+.img_sanpham {
+  float: left;
+  width: 45%;
+}
+#cart-title {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+#product-detail {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+.detail_sanpham {
+  margin: 25px 5px;
+  float: left;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#card-title {
+  font-size: 35px;
+}
+input.add_cart {
+  font-size: 14px;
+  background: var(--color-2);
+  color: white;
+  padding: 8px;
+  border-radius: 2px;
+  cursor: pointer;
+  border: unset;
+}
+.header {
+  height: 300px;
+  background: url(https://muahanguudai.com/wp-content/uploads/2020/04/Banner-ra-mat-muahanguudai.jpg)
+    no-repeat;
+  background-size: cover;
+  background-position-y: 30%;
+}
+/* menu */
+.menu {
+  height: 60px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0 30px 0;
+}
+
+ul.list-menu {
+  list-style: none;
+}
+ul.list-menu li:hover {
+  background-color: var(--color-1);
+}
+
+ul.list-menu li a {
+  text-decoration: none;
+  text-align: center;
+  color: var(--color-2);
+}
+ul.list-menu li {
+  float: left;
+  margin: 7px;
+  padding: 5px;
+  border-radius: 2px;
+  transition: 0.5ms linear;
+}
+#search-btn {
+  all: unset;
+  background-color: var(--color-1);
+  color: black;
+  padding: 0 10px;
+  height: 100%;
+  cursor: pointer;
+  font-size: 13px;
+}
+/* main */
+#main {
+  height: auto;
+  width: 100%;
+}
+#search-form {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#search-inp {
+  height: 30px;
+  border: 1px solid var(--color-3);
+  padding: 0 10px;
+  border-radius: 2px;
+  width: 400px;
+}
+/* SIDEBAR */
+.sidebar {
+  height: 390px;
+  width: 20%;
+  margin-top: 5px;
+  margin-left: 5px;
+  float: left;
+}
+
+ul.list-sidebar {
+  width: 100%;
+  list-style: none;
+  line-height: 20px;
+  display: flex;
+  flex-direction: column;
+}
+ul.list-sidebar li:hover {
+  background-color: var(--color-1);
+}
+
+ul.list-sidebar li a {
+  text-decoration: none;
+  text-align: left;
+  color: black;
+  display: block;
+}
+ul.list-sidebar li {
+  padding: 10px 0 10px 10px;
+  transition: 0.5ms;
+}
+
+/* MAIN CONTENT */
+.main-content {
+  height: auto;
+  width: 78%;
+  margin-top: 5px;
+  margin-left: 5px;
+  float: right;
+}
+
+ul.list-product {
+  list-style: none;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+ul.list-product li a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+ul.list-product li img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  display: block;
+  border-radius: 5px;
+}
+.product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#new-product-title {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+ul.list-product li {
+  width: calc(100% / 5);
+  background-color: var(--color-1);
+  height: 300px;
+  border-radius: 5px;
+  padding: 10px;
+}
+p.product-title {
+  text-align: center;
+  color: #000;
+  font-size: 15px;
+  font-weight: bold;
+  width: 185px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+p.product-price {
+  text-align: center;
+  color: red;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* FOOTER */
+.footer {
+  padding: 30px 0;
+  width: 100%;
+  background-color: var(--color-1);
+  margin-top: 30px;
+}
+p.footer-copyright {
+  color: black;
+  text-align: center;
+}
+.clear {
+  clear: both;
+}
+.list_trang {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#list-tab {
+  display: flex;
+  gap: 5px;
+}
+#cart-table tr {
+  border: 1px solid var(--color-3);
+}
+#cart-header {
+  height: 40px;
+}
+.product-row {
+  height: 150px;
+}
+#register-btn{
+  all: unset;
+  background-color: var(--color-2);
+  background-color: var(--color-1);
+  padding: 5px 10px;
+  border-radius: 2px;
+  font-size: 13px;
+  cursor: pointer;
+}
+table.table_dangky tr td {
+  padding: 5px;
+}
+table.table_dangky input{
+  border: 1px solid var(--color-3);
+  height: 25px;
+  padding: 0 10px;
+}
+#login-btn{
+  all: unset;
+  padding: 5px 10px;
+  background-color: var(--color-1);
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 13px;
+}
+.login-inp{
+  border: 1px solid var(--color-3);
+  height: 25px;
+  padding: 0 10px;
+}
+#regist-title{
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+#table-footer {
+  padding: 0 10px;
+  height: 50px;
+}
+ul.list_trang {
+  list-style: none;
+}
+ul.list_trang li {
+  padding: 5px 13px;
+  display: block;
+  background-color: var(--color-1);
+  cursor: pointer;
+}
+ul.list_trang li a {
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+}
+textarea{
+  width: 90%;
+}
+
+#add-product tr{
+  height: 40px;
+}
+#add-product tr td:first-child{
+ border-bottom: 1px solid #eaeaea;
+}
+#add-product input{
+  width: 90%;
+  height: 30px;
+}
+#list-product td{
+  border: 1px solid var(--color-3);
+}
+#list-product tr{
+  border: 1px solid var(--color-1);
+}
+#list-product tr:hover{
+  background-color: var(--color-1);
+}
